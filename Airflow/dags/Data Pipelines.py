@@ -12,7 +12,7 @@ from helpers import SqlQueries
 # AWS_SECRET = os.environ.get('AWS_SECRET')
 
 default_args = {
-    'owner': 'udacity',
+    'owner': 'Mahmoud Anwer',
     'start_date': datetime(2019, 1, 12),
     'email': ['airflow@example.com'],
     'email_on_failure': False,
@@ -21,7 +21,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-dag = DAG("udac_example_dag",
+dag = DAG("Data Pipelines",
           default_args=default_args,
           description='Load and transform data in Redshift with Airflow',
           schedule_interval='@hourly',
